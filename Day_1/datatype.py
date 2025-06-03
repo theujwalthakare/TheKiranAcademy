@@ -1,4 +1,4 @@
-a=20        # int
+    a=20        # int
 print(a, type(a))   
 
 b = 0b10110     # Binary
