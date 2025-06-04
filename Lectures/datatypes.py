@@ -18,7 +18,7 @@ print(s[::-2])
 # indexing and slicing
 # using negatinve indexing and slicing print the following output : stag , ram, etc
 s = "FACEBOOK"
-print(s[-7:-3])
+print(s[-7:3])
 print(s[-5:])
 print(s[-7:-4])
 print(s[-7:3])
