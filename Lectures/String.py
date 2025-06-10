@@ -26,7 +26,7 @@ for i in name.lower():
 print("the count of vowels in name is  = ", c)
 # print in reverse the string name 
 for i in range(len(name)-1,-1,-1):
-
+    pass
 
     
    
