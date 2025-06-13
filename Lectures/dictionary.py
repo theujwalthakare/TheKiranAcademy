@@ -32,7 +32,7 @@ print(movie_db[name1])
 
 for k,v in movie_db.items():
     # print(t)
-    # k,v = t
+    # k,v = t       
     print(k,":",v)
     
 #
