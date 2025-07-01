@@ -51,6 +51,23 @@ print("float * float = ", e*e)
 print("str * bool = ", c*f)
 # print("str * str = ", c*d) // TypeError: can't multiply sequence by non-int of type 'str'
 
+# create a list, set, tuple, dict, string and perform all the operations on it
+l = [1,2,3,4,5,6,7,8,9,10]
+s = {1,2,3,4,5,6,7,8,9,10}
+t = (1,2,3,4,5,6,7,8,9,10)
+d = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five"}
+str = "saibuyguybuybubv"
+# try combination of data to calculate addition, multiplication, substraction
+print("list + list = ", l+l)
+# print("set + set = ", s+s)
+print("tuple + tuple = ", t+t)
+# print("dict + dict = ", d+d)
+print("str + str = ", str+str)
+# print("list + int = ", l+a)
+# print("set + int = ", s+a)
+# print("tuple + int = ", t+a)
+# print("dict + int = ", d+a)
+# print(l + d)
 
 
 
