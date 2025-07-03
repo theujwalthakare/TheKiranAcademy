@@ -1,10 +1,11 @@
 class PlayerInfo():
-    def __init__(self,JN,name,runs,wickets,team_name):
+    def __init__(self,JN,name,runs,wickets,team_name,TEAM_cap = ''):
         self.JN = JN
         self.name = name
         self.runs = runs
         self.wickets = wickets
         self.team_name = team_name
+        self.captain = TEAM_cap
     
     def getJName(self):
         return self.JN
@@ -26,13 +27,18 @@ class PlayerInfo():
         return self.team_name
     def setTeamName(self,team_name):
         self.team_name = team_name
-
+    def getCap(self):
+        return self.captain
+    def setCap(self,captain):
+        self.captain = captain
+    
+    
 MI_Team = []
 p1 = PlayerInfo(45, "Rohit Sharma", 520, 0, "Mumbai Indians")
 p2 = PlayerInfo(77, "Suryakumar Yadav", 480, 0, "Mumbai Indians")
 p3 = PlayerInfo(63, "Ishan Kishan", 430, 0, "Mumbai Indians")
 p4 = PlayerInfo(33, "Tilak Varma", 370, 0, "Mumbai Indians")
-p5 = PlayerInfo(99, "Hardik Pandya", 310, 10, "Mumbai Indians")
+p5 = PlayerInfo(99, "Hardik Pandya", 310, 10, "Mumbai Indians",'CAPTAIN')
 p6 = PlayerInfo(93, "Tim David", 250, 0, "Mumbai Indians")
 p7 = PlayerInfo(8, "Piyush Chawla", 20, 18, "Mumbai Indians")
 p8 = PlayerInfo(94, "Gerald Coetzee", 15, 20, "Mumbai Indians")
@@ -56,7 +62,7 @@ RCB_Team = []
 p1 = PlayerInfo(18, "Virat Kohli", 680, 0, "Royal Challengers Bangalore")
 p2 = PlayerInfo(97, "Faf du Plessis", 520, 0, "Royal Challengers Bangalore")
 p3 = PlayerInfo(7, "Glenn Maxwell", 410, 8, "Royal Challengers Bangalore")
-p4 = PlayerInfo(5, "Rajat Patidar", 380, 0, "Royal Challengers Bangalore")
+p4 = PlayerInfo(5, "Rajat Patidar", 380, 0, "Royal Challengers Bangalore",'CAPTAIN')
 p5 = PlayerInfo(77, "Dinesh Karthik", 250, 0, "Royal Challengers Bangalore")
 p6 = PlayerInfo(66, "Mahipal Lomror", 220, 0, "Royal Challengers Bangalore")
 p7 = PlayerInfo(19, "Cameron Green", 320, 5, "Royal Challengers Bangalore")
@@ -78,7 +84,7 @@ RCB_Team.append(p11)
 
 CSK_Team = []
 
-p1 = PlayerInfo(7, "MS Dhoni", 180, 0, "Chennai Super Kings")
+p1 = PlayerInfo(7, "MS Dhoni", 180, 0, "Chennai Super Kings",'CAPTAIN')
 p2 = PlayerInfo(31, "Ruturaj Gaikwad", 540, 0, "Chennai Super Kings")
 p3 = PlayerInfo(8, "Devon Conway", 480, 0, "Chennai Super Kings")
 p4 = PlayerInfo(5, "Ajinkya Rahane", 400, 0, "Chennai Super Kings")
@@ -103,33 +109,3 @@ CSK_Team.append(p10)
 CSK_Team.append(p11)
 
 
-teams ={"RCB":RCB_Team, "CSK":CSK_Team, "MI":MI_Team}
-
-
-    
-# what we have 
-#  team Mumbai Indians
-#  team RCB
-#  team CSK
-
-
-
-# def menu():
-#     print("++++++++++++++++++ Welcome To IPL Team Managment System ++++++++++++++++++")
-#     ch = int(input("Enter your choice :"))
-#     while(ch!=0):
-#         print("1. SHOW YOUR PREFERED IPL TEAM DETAILS --> ")
-#         print("2. SHOW STATISTIC REPORT OF EVERY TEAM PLAYER --> ")
-#         print("3. SHOW TOP RUN SCORER IN A TEAM  -> ")
-#         print("4. SHOW TOP WICKET TACKER IN A TEAM --> ")
-#         print("0. FOR EXIT ")
-        
-#         if ch==1:
-#             team = input("Enter team name :")
-#             if team in teams:
-                
-                
-                
-#         else:
-#             break       
-# menu()
